@@ -1,0 +1,69 @@
+= Changelog
+
+:sectnums!:
+
+== link:++https://github.com/saltstack-formulas/haproxy-formula/compare/v0.17.0...v0.17.1++[0.17.1^] (2021-03-04)
+
+=== Bug Fixes
+
+* *config:* ensure `haproxy:global:chroot:path` is created if provided
+(https://github.com/saltstack-formulas/haproxy-formula/commit/92831b6d2f6889759f8e49aa9c56cf0062b56155[92831b6^])
+* *templates/haproxy.jinja:* replace deprecated `reqadd`
+(https://github.com/saltstack-formulas/haproxy-formula/commit/8c6c85593659c3ffa37c44651049f0104c63af3a[8c6c855^]),
+closes
+https://github.com//github.com/haproxy/haproxy/blob/31dd393da0e6c20bf65ea833d10635a8b26cb355/src/cfgparse-listen.c/issues/L2843-L2845[/github.com/haproxy/haproxy/blob/31dd393da0e6c20bf65ea833d10635a8b26cb355/src/cfgparse-listen.c#L2843-L2845^]
+
+=== Continuous Integration
+
+* *commitlint:* ensure `upstream/master` uses main repo URL [skip ci]
+(https://github.com/saltstack-formulas/haproxy-formula/commit/c80fa08e2ab7ad220bad0182935d0e8cde582ae7[c80fa08^])
+* *gemfile+lock:* use `ssf` customised `kitchen-docker` repo [skip ci]
+(https://github.com/saltstack-formulas/haproxy-formula/commit/db31f527d7e7bfab0aed5964c16e4f68c5c598fa[db31f52^])
+* *gitlab-ci:* add `rubocop` linter (with `allow_failure`) [skip ci]
+(https://github.com/saltstack-formulas/haproxy-formula/commit/1792404822afe8117ea9c2e5c38db8041fce7e77[1792404^])
+* *gitlab-ci:* use GitLab CI as Travis CI replacement
+(https://github.com/saltstack-formulas/haproxy-formula/commit/17911caf56eda9d025c0833e6c6714b3fb6b7eaf[17911ca^])
+* *kitchen+gitlab-ci:* use latest pre-salted images
+(https://github.com/saltstack-formulas/haproxy-formula/commit/ae579a77d61afb5aaa15bf7d52e71e59dc7a5d11[ae579a7^])
+* *pre-commit:* add to formula [skip ci]
+(https://github.com/saltstack-formulas/haproxy-formula/commit/649b533c21d5f4b9d8b48f4cbea16fc6210392e1[649b533^])
+* *pre-commit:* enable/disable `rstcheck` as relevant [skip ci]
+(https://github.com/saltstack-formulas/haproxy-formula/commit/79ec26d59f9a1aa9550aa3c5cd3a24bfb4436dd0[79ec26d^])
+* *pre-commit:* finalise `rstcheck` configuration [skip ci]
+(https://github.com/saltstack-formulas/haproxy-formula/commit/0792e2614b87ab2ea30f25af9b0387075fb83497[0792e26^])
+* *pre-commit:* update hook for `rubocop` [skip ci]
+(https://github.com/saltstack-formulas/haproxy-formula/commit/a73b49f432000f45ee08352d7607ffdeaaab7986[a73b49f^])
+
+=== Tests
+
+* *pillar:* provide `default` pillar working on all platforms
+(https://github.com/saltstack-formulas/haproxy-formula/commit/12be6ff15c0c23d385ebed308ad953a399b86b3f[12be6ff^])
+
+== link:++https://github.com/saltstack-formulas/haproxy-formula/compare/v0.16.0...v0.17.0++[0.17.0^] (2020-06-16)
+
+=== Bug Fixes
+
+* *rubocop:* fix violations using `rubocop -a`
+(https://github.com/saltstack-formulas/haproxy-formula/commit/98076d3bb952f6731f3aa1170bb4ebe86708f6de[98076d3^])
+
+=== Code Refactoring
+
+* *kitchen:* prefer `kitchen.yml` to `.kitchen.yml`
+(https://github.com/saltstack-formulas/haproxy-formula/commit/47eababd780a08ebe888d174d640cf90c059745a[47eabab^])
+
+=== Continuous Integration
+
+* *salt-lint:* fix
+(https://github.com/saltstack-formulas/haproxy-formula/commit/60e8d19f0357051d4dfcac8339872443b936498e[60e8d19^])
+* *yamlint:* fix
+(https://github.com/saltstack-formulas/haproxy-formula/commit/1072b1d8125289e118fc4dc2a7b61ee6f3e1f931[1072b1d^])
+
+=== Documentation
+
+* *readme:* merge with original `README`
+(https://github.com/saltstack-formulas/haproxy-formula/commit/870474e53a7c45fee3cd7cd897375fea7bf6028b[870474e^])
+
+=== Features
+
+* implement semantic release
+(https://github.com/saltstack-formulas/haproxy-formula/commit/d921a49bda6743c839f81a3e22b3ba54c6ad99d8[d921a49^])
